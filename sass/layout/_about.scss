@@ -42,21 +42,27 @@
 
   &__img-cont {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: 8.6rem;
-    padding: 3.6rem;
-    background: url("imgs/about-img.jpg") right/cover;
+    font-size: 6.4rem;
     border-radius: 6px;
+    position: relative;
 
-    &:hover span {
-      transform: scale(1.2);
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
 
     span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       transition: all 0.2s;
       text-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.3);
+
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
     }
   }
 }
