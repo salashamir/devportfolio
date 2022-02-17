@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta author="Christian Salazar" />
+    <meta
+      name="description"
+      content="Christian Salazar - Web Development Portfolio. Features tech skills, projects worked on, and a contact form for inquiries."
+    />
+    <meta
+      name="keywords"
+      content="Christian Salazar, Web Development, Development, Web Developer, React developer, Web Designer, Web Design, Front End Developer"
+    />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="icon" href="/imgs/favicons/favicon64.PNG" />
+    <link rel="apple-touch-icon" href="/imgs/favicons/favicon180apple.PNG" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Christian Salazar &mdash; Web Developer</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <header class="header">
+      <!-- <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="imgs/codingvideo.mp4" type="video/mp4" />
+          Your browser is not supported!
+        </video>
+      </div> -->
+      <a class="logo" href="#">christian<span>.Salazar</span></a>
+      <button class="mobile-nav-open" aria-controls="primary-navigation">
+        <span class="sr-only">Menu</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </button>
+      <button class="mobile-nav-close">
+        <svg
+          class="w-6 h-6"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          aria-expanded="false"
+          class="nav"
+        >
+          <li>
+            <a href="#" class="nav__link scroll-link"
+              ><span aria-hidden="true">00</span> Home</a
+            >
+          </li>
+          <li>
+            <a href="#projects" class="nav__link scroll-link"
+              ><span aria-hidden="true">01</span> My work</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav__link scroll-link"
+              ><span aria-hidden="true">02</span> About</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav__link scroll-link"
+              ><span aria-hidden="true">03</span> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- hero -->
+      <hero id="hero" class="hero">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="imgs/codingvideo.mp4" type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
+        <di v class="hero__content">
+          <h1 class="hero__heading">
+            Crafting <span>dynamic</span>, interactive web experiences
+          </h1>
+          <h3 class="hero__typing"></h3>
+          <div class="hero__links">
+            <a href="#projects" class="btn--pink btn mr-small scroll-link"
+              >Projects</a
+            >
+            <a href="#" class="btn--purple btn mb-large">Resume</a>
+          </div>
+          <div class="hero__social-links">
+            <a href="https://github.com/salashamir"
+              ><div class="social-circle sc-github">
+                <i class="ph-github-logo github"></i></div
+            ></a>
+            <a href="https://www.linkedin.com/in/christian-salazar-006725228/"
+              ><div class="social-circle sc-linkedin">
+                <i class="ph-linkedin-logo linkedin"></i></div
+            ></a>
+            <a href=""
+              ><div class="social-circle sc-email">
+                <i class="ph-envelope email"></i></div
+            ></a>
+          </div>
+        </di>
+      </hero>
+      <!-- end of hero -->
+      <!-- skill section -->
+      <section class="skills section">
+        <div class="container">
+          <h2 class="secondary-heading neon-orange">< Skills /></h2>
+          <div class="skills__grid">
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.1"
+              class="skill skill__border skill__border--html one"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/html_resized.webp"
+                  type="image/webp"
+                />
+                <source srcset="imgs/logos/html_resized.png" type="image/png" />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/html_resized.png"
+                  alt="HTML5 logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--html">HTML5</span>
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.2"
+              class="skill skill__border skill__border--js two"
+            >
+              <picture>
+                <source srcset="imgs/logos/javascript.webp" type="image/webp" />
+                <source srcset="imgs/logos/javascript.png" type="image/png" />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/javascript.png"
+                  alt="JavaScript logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--js">JavaScript</span>
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.1"
+              class="skill skill__border skill__border--css three"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/css_resized.webp"
+                  type="image/webp"
+                />
+                <source srcset="imgs/logos/css_resized.png" type="image/png" />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/css_resized.png"
+                  alt="CSS3 logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--css">CSS3</span>
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.2"
+              class="skill skill__border skill__border--firebase four"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/firebase_resized.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/logos/firebase_resized.png"
+                  type="image/png"
+                />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/firebase_resized.png"
+                  alt="Firebase logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--firebase"
+                >Firebase</span
+              >
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.1"
+              class="skill skill__border skill__border--scss five"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/sass_resized.webp"
+                  type="image/webp"
+                />
+                <source srcset="imgs/logos/sass_resized.png" type="image/png" />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/sass_resized.webp"
+                  alt="SASS preprocessor logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--scss">SCSS/SASS</span>
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.2"
+              class="skill skill__border skill__border--tailwind six"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/tailwind_resized.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/logos/tailwind_resized.png"
+                  type="image/png"
+                />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/tailwind_resized.png"
+                  alt="Tailwind framework logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--tailwind"
+                >Tailwind</span
+              >
+            </div>
+            <div
+              data-tilt
+              data-tilt-scale="1.1"
+              data-tilt-glare
+              data-tilt-max-glare="0.1"
+              class="skill skill__border skill__border--bootstrap seven"
+            >
+              <picture>
+                <source
+                  srcset="imgs/logos/bootstrap_resized.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/logos/bootstrap_resized.png"
+                  type="image/png"
+                />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/bootstrap_resized.png"
+                  alt="Bootstrap framework logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--bootstrap"
+                >Bootstrap5</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects section -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="secondary-heading neon-blue">< Projects /></h2>
+          <div class="projects__grid">
+            <!-- project 1 -->
+            <article class="project project--yetichat">
+              <picture>
+                <source
+                  srcset="imgs/projects/yetichat_min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/yetichat_min.PNG"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="imgs/projects/yetichat_min.PNG"
+                  alt=""
+                />
+              </picture>
+              <div class="project__content">
+                <h3 class="project__title project__title--yetichat">
+                  Yetichat
+                </h3>
+                <p class="project__desc">
+                  Web app. Learned about ES6 modules, splitting JS logic, and
+                  asynchronous JS with async/await database requests and
+                  queries. Connected frontend to a backend database with
+                  Firestore to store chat logs as documents.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-js">JavaScript</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-css">CSS</span>
+                  <span class="span-firebase">Firebase</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project 2 -->
+            <article class="project project--dojo">
+              <picture>
+                <source
+                  srcset="imgs/projects/dojo_min.webp"
+                  type="image/webp"
+                />
+                <source srcset="imgs/projects/dojo_min.PNG" type="image/png" />
+                <img
+                  class="project__img"
+                  src="imgs/projects/dojo_min.PNG"
+                  alt=""
+                />
+              </picture>
+              <div class="project__content">
+                <h3 class="project__title project__title--dojo">
+                  Dojo of Code
+                </h3>
+                <p class="project__desc">
+                  Mock promotional website created using Bootstrap 5 with SASS
+                  customization and full use of multiple components including
+                  modal, accordion, offcanvas, cards, and a fully responsive
+                  grid layout. Also includes Boostrap icon set.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-bootstrap">Bootstrap 5</span>
+                  <span class="span-scss">SCSS</span>
+                  <span class="span-js">JavaScript</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project 3 -->
+            <article class="project project--jstodos">
+              <img
+                class="project__img"
+                src="/imgs/projects/vanillatodos_min.PNG"
+                alt=""
+              />
+              <div class="project__content">
+                <h3 class="project__title project__title--jstodos">
+                  JS Todos App
+                </h3>
+                <p class="project__desc">
+                  Todos list web app created with vanilla JavaScript, HTML, CSS.
+                  Features multiple functionalities like adding and deleting
+                  todos, filtering todos via search term, crossing out todos
+                  upon completion, and editing todos.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-js">JavaScript</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project 4 -->
+            <article class="project project--qcloud">
+              <picture>
+                <source
+                  srcset="imgs/projects/qcloud_min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/qcloud_min.PNG"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="/imgs/projects/qcloud_min.PNG"
+                  alt=""
+                />
+              </picture>
+              <div class="project__content">
+                <h3 class="project__title project__title--qcloud">qCloud</h3>
+                <p class="project__desc">
+                  Mock website for a cloud hosting company featuring multiple
+                  pages for customer testimonials, packages, and a sign-up page.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-css">CSS</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-js">JavaScript</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project 5 -->
+            <article class="project">
+              <picture>
+                <source
+                  srcset="imgs/projects/yetigram_min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/yetigram_min.PNG"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="/imgs/projects/yetigram_min.PNG"
+                  alt=""
+                />
+              </picture>
+              <div class="project__content">
+                <h3 class="project__title">Yetigram</h3>
+                <p class="project__desc">
+                  Photo upload app. Front end made with React and file storage
+                  and database set up with Firebase. Framer Motion library for
+                  animations. Users can upload png and jpg images to be
+                  displayed in a grid.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-react">React</span>
+                  <span class="span-firebase">Firebase</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project 6 -->
+            <article class="project project-reacttodo">
+              <picture>
+                <source
+                  srcset="imgs/projects/reacttodo_min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/reacttodo_min.PNG"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="/imgs/projects/reacttodo_min.PNG"
+                  alt=""
+                />
+              </picture>
+              <div class="project__content">
+                <h3 class="project__title project__title--reacttodo">
+                  React Todo List
+                </h3>
+                <p class="project__desc">
+                  Todo List app created using React. Functionalities include
+                  adding todos, removing todos, and editing todos.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-react">React</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a href="#" class="btn btn-project btn--pink">Live project</a>
+                  <a href="#" class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="secondary-heading">< About <span>Me.</span> /></h2>
+          <h3 class="hand">👋</h3>
+          <div class="about__flex">
+            <p>
+              Hello, my name is <span>Christian Salazar</span> and I'm a web
+              developer and designer. I deeply enjoy creating new user
+              experiences and working on both the front and back end of sites,
+              with the determination to face any challenge. One of my favorite
+              aspects of the development process is seeing concepts turn into
+              reality and designs translate from sketches to full-featured
+              sites. I look forward to continuing to learn new skills and
+              frameworks and always staying up to date on web dev trends.
+            </p>
+            <div class="about__img-cont">
+              <span>🧑🏾</span>
+              <span>💻</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+      integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="vanilla-tilt.babel.min.js"></script>
+    <script src="nav.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

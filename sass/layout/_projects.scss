@@ -1,0 +1,26 @@
+.projects {
+  padding: 5.6rem 0 7.2rem;
+  width: 100%;
+  background: url("../../imgs/skillsbcg.webp") center/cover no-repeat fixed;
+  // background: url("../../imgs/pexels-faik-akmd-1025469.jpg") center/cover
+  //   no-repeat fixed;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 4rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .projects .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 864px) {
+  .projects .projects__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

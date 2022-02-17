@@ -1,0 +1,17 @@
+{
+  "name": "portfolio_2ndattempt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileSass": "sass --watch sass/main.scss css/main.css --style=compressed --embed-sources"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "vanilla-tilt": "^1.7.2"
+  }
+}

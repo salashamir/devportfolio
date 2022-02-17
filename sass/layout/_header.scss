@@ -1,0 +1,140 @@
+@use "../abstracts/variables" as var;
+
+.header {
+  background-color: #000;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    margin: 3.2rem;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: #fff;
+
+    span {
+      color: var.$primary-light;
+      font-size: 2.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .mobile-nav-open {
+    display: none;
+    border: none;
+  }
+
+  .mobile-nav-close {
+    display: none;
+    border: none;
+  }
+
+  .nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    gap: 1.6rem;
+    // background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(1rem);
+
+    a > [aria-hidden="true"] {
+      font-weight: 700;
+      margin-inline-end: 0.8rem;
+    }
+
+    &__link:link,
+    &__link:visited {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 400;
+      transition: all 0.2s ease;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: var.$primary-light;
+      box-shadow: 0 1rem 2rem rgba(#222, 0.4);
+      transform: scale(1.3);
+    }
+  }
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .nav {
+    background: hsl(0 0% 0% / 0.5);
+    backdrop-filter: blur(1rem);
+  }
+}
+
+@media (max-width: 680px) {
+  .header .nav {
+    gap: 7rem;
+    position: fixed;
+    inset: 0 0 0 35%;
+    flex-direction: column;
+    padding: 5rem 3.2rem;
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+
+    &__link:link,
+    &__link:visited {
+      font-size: 2.4rem;
+      transition: all 0.2s ease-in;
+    }
+
+    &__link:hover,
+    &__link:active {
+      color: var.$primary-light;
+      box-shadow: 0 1rem 2rem rgba(#222, 0.4);
+      transform: scale(1.3);
+    }
+
+    li {
+      opacity: 0;
+    }
+  }
+
+  .header .nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .header .mobile-nav-open,
+  .header .mobile-nav-close {
+    color: #fff;
+    display: block;
+    position: fixed;
+    border: 0;
+    background: transparent;
+    width: 3.2rem;
+    aspect-ratio: 1;
+    top: 3.2rem;
+    right: 3.2rem;
+    z-index: 9999;
+  }
+
+  .header .mobile-nav-close {
+    display: none;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 864px) {
+  .header .nav a > span[aria-hidden] {
+    display: none;
+    padding-block: 2.3rem;
+    padding-inline: clamp(2rem, 5vw, 5rem);
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 701px) {
+  .header .nav {
+    padding-block: 2.3rem;
+    padding-inline: clamp(2rem, 5vw, 5rem);
+    gap: 5rem;
+  }
+}

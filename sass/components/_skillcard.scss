@@ -1,0 +1,161 @@
+.skill {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  height: 17rem;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px 4px rgba($color: #000000, $alpha: 0.2);
+  opacity: 90%;
+  transition: all 0.3s ease;
+
+  // exp
+  background: rgba($color: #fff, $alpha: 0.05);
+
+  img {
+    height: 13rem;
+  }
+
+  &:hover {
+    transform: scale(1.2) translateY(-6px);
+    background: transparent;
+
+    & .skill__banner {
+      display: inline-block;
+      opacity: 1;
+      transform: translateY(100%);
+    }
+  }
+
+  &__banner {
+    color: #fff;
+
+    position: absolute;
+    padding: 1rem 3rem;
+    top: 45%;
+    font-size: 2rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: all 0.3s;
+
+    &--html {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(253, 162, 26, 0.849), 0.85),
+        rgba(rgb(192, 124, 22), 0.85)
+      );
+    }
+    &--js {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(255, 231, 17, 0.849), 0.85),
+        rgba(rgb(206, 203, 56), 0.85)
+      );
+    }
+    &--css {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(27, 152, 255, 0.849), 0.85),
+        rgba(rgb(96, 187, 248), 0.85)
+      );
+    }
+    &--firebase {
+      background: linear-gradient(
+        to right bottom,
+        rgba(#f5945cd8, 0.85),
+        rgba(rgb(255, 230, 0), 0.85)
+      );
+    }
+    &--scss {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(244, 135, 248, 0.849), 0.85),
+        rgba(rgb(236, 27, 219), 0.85)
+      );
+    }
+    &--tailwind {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(78, 228, 255, 0.849), 0.85),
+        rgba(rgb(13, 216, 243), 0.85)
+      );
+    }
+    &--bootstrap {
+      background: linear-gradient(
+        to right bottom,
+        rgba(rgba(129, 75, 255, 0.849), 0.85),
+        rgba(rgb(120, 57, 202), 0.85)
+      );
+    }
+  }
+}
+
+.skill__border {
+  border-width: 3px;
+  border-style: solid;
+
+  transition: all 0.3 ease;
+
+  // &--html {
+  //   border-color: transparent;
+
+  //   &:hover {
+  //     border-color: rgb(233, 105, 0);
+  //   }
+  // }
+
+  // &--js {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: rgba(255, 231, 17, 0.849);
+  //   }
+  // }
+
+  // &--css {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: rgba(27, 152, 255, 0.849);
+  //   }
+  // }
+
+  // &--firebase {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: #f5945cd8;
+  //   }
+  // }
+
+  // &--scss {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: rgb(236, 27, 219);
+  //   }
+  // }
+
+  // &--tailwind {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: rgb(103, 250, 218);
+  //   }
+  // }
+
+  // &--bootstrap {
+  //   border-color: transparent;
+  //   &:hover {
+  //     border-color: rgba(129, 75, 255, 0.849);
+  //   }
+  // }
+}
+
+// breakpoints used: 440px 680px, 864px, 1200px
+@media (min-width: 680px) {
+  .skill {
+    width: 70%;
+  }
+}
+
+@media (min-width: 864px) {
+  .skill {
+    width: 85%;
+  }
+}

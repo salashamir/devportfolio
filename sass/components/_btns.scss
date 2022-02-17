@@ -1,0 +1,55 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2.4rem;
+    font-weight: 400;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    padding: 1rem 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:active {
+    transform: scale(1.07);
+  }
+
+  &--pink {
+    color: #f1356d;
+    background-color: #fff;
+    border: 2px solid #f1356d;
+
+    &:hover,
+    &:active {
+      background-color: #f74f81;
+      color: #fff;
+    }
+  }
+
+  &--purple {
+    color: #4c0ef7;
+    background-color: #fff;
+    border: 2px solid #4c0ef7;
+
+    &:hover,
+    &:active {
+      background-color: #4c0ef7;
+      color: #fff;
+    }
+  }
+
+  &--red {
+    color: #e23a3a;
+    background-color: #fff;
+    border: 2px solid #e23a3a;
+
+    &:hover,
+    &:active {
+      background-color: #e23a3a;
+      color: #fff;
+    }
+  }
+}

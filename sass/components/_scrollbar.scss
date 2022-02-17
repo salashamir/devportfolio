@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as var;
+
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+::-webkit-scrollbar-track {
+  // background: #2f2f2f;
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var.$primary-light;
+  border-radius: 100vw;
+}
