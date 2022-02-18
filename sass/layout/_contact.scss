@@ -1,4 +1,10 @@
 .contact {
   padding: 7.2rem 0 6.4rem;
-  background-color: #fff;
+  color: #fff;
+
+  & .secondary-heading {
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: -1px;
+  }
 }
