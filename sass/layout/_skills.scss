@@ -1,7 +1,50 @@
 .skills {
-  padding: 7.2rem 0 4.8rem;
+  padding: 8.4rem 0;
+  position: relative;
   width: 100%;
-  background: url("../imgs/skillsbcg.jpg") center/cover no-repeat fixed;
+  background: url("../imgs/blurred-skills-bcg.jpg") center/cover no-repeat fixed;
+  overflow: hidden;
+
+  .box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    div {
+      position: absolute;
+      height: 6rem;
+      width: 6rem;
+      border: 8px solid rgba(255, 255, 255, 0.562);
+      border-radius: 50%;
+
+      &:nth-child(1) {
+        top: 90%;
+        left: 42%;
+        animation: animate 16s linear infinite;
+      }
+      &:nth-child(2) {
+        top: 70%;
+        left: 90%;
+        animation: animate 8s linear infinite;
+      }
+      &:nth-child(3) {
+        top: 17%;
+        left: 6%;
+        animation: animate 9s linear infinite;
+      }
+      &:nth-child(4) {
+        top: 30%;
+        left: 60%;
+        animation: animate 10s linear infinite;
+      }
+      &:nth-child(5) {
+        top: 67%;
+        left: 25%;
+        animation: animate 9s linear infinite;
+      }
+    }
+  }
 
   &__grid {
     display: grid;

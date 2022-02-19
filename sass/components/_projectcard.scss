@@ -11,24 +11,8 @@
   &:hover {
     transform: rotate(-2deg);
     opacity: 1;
-    box-shadow: 0 12px 24px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 12px 24px 6px rgba(0, 0, 0, 0.4);
   }
-
-  // &--yetichat:hover {
-  //   box-shadow: 0 5px 10px 8px rgba(0, 225, 255, 0.308);
-  // }
-
-  // &--dojo:hover {
-  //   box-shadow: 0 5px 10px 8px rgba(255, 41, 77, 0.308);
-  // }
-
-  // &--jstodos:hover {
-  //   box-shadow: 0 5px 10px 8px rgba(2, 255, 179, 0.308);
-  // }
-
-  // &--qcloud:hover {
-  //   box-shadow: 0 5px 10px 8px rgba(85, 255, 79, 0.308);
-  // }
 
   &__img {
     width: 100%;
@@ -39,7 +23,7 @@
 
   &__content {
     color: #ddd;
-    background-color: #3f3f3f;
+    background-color: #3f3f3fa2;
     padding: 1.5rem 2.5rem;
     display: flex;
     flex-direction: column;

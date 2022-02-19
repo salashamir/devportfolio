@@ -1,13 +1,18 @@
 .projects {
-  padding: 4.8rem 0 8.4rem;
+  // padding: 4.8rem 0 8.4rem;
+  padding: 4.8rem 0 0 0;
   width: 100%;
-  background: url("../imgs/skillsbcg.jpg") center/cover no-repeat fixed;
+  background: url("../imgs/blurred-skills-bcg.jpg") center/cover no-repeat fixed;
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 4rem;
+  }
+
+  .waves {
+    margin-bottom: -1rem;
   }
 }
 

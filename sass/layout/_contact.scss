@@ -1,5 +1,5 @@
 .contact {
-  padding: 7.2rem 0 6.4rem;
+  padding: 8.6rem 0;
   color: #fff;
   background: url("../imgs/code-contact-bcg.jpg") center/cover no-repeat fixed;
 
@@ -39,5 +39,32 @@
       margin-top: 6.4rem;
       font-size: 6.4rem;
     }
+  }
+}
+
+@media (max-width: 714px) {
+  .contact .contact__form-container {
+    flex-direction: column;
+  }
+
+  .contact .contact__left {
+    flex: 0.5;
+    position: relative;
+
+    i {
+      margin-top: 3.2rem;
+      transform: rotate(90deg);
+      position: absolute;
+      top: -5%;
+      right: 10%;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .contact .contact__left i {
+    font-size: 4.2rem;
+    top: -1.5%;
+    right: 4%;
   }
 }
