@@ -100,23 +100,3 @@ tl.fromTo(
     },
     { y: 0, opacity: 1, duration: 1 }
   );
-
-// smoothscroll
-const scrollLinks = document.querySelectorAll(".scroll-link");
-
-scrollLinks.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    // prevent default
-    e.preventDefault();
-    // navigate to specific spot
-    const id = e.currentTarget.getAttribute("href").slice(1);
-    console.log(e.currentTarget, e.currentTarget.getAttribute("href"));
-    const element = document.getElementById(id);
-    let position = element.offsetTop;
-
-    window.scrollTo({
-      left: 0,
-      top: position,
-    });
-  });
-});
