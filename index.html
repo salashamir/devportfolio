@@ -29,68 +29,38 @@
   <body>
     <!-- nav -->
     <header class="header">
-      <!-- <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="imgs/codingvideo.mp4" type="video/mp4" />
-          Your browser is not supported!
-        </video>
-      </div> -->
-      <a class="logo" href="#">christian<span>.Salazar</span></a>
-      <button class="mobile-nav-open" aria-controls="primary-navigation">
-        <span class="sr-only">Menu</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m-7 6h7"
-          />
-        </svg>
-      </button>
-      <button class="mobile-nav-close">
-        <svg
-          class="w-6 h-6"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-      <nav>
+      <nav class="container flex">
+        <a class="logo" href="#home">christian<span>.Salazar</span></a>
+        <div class="nav-burger" aria-controls="primary-navigation">
+          <!-- <span class="sr-only">Menu</span> -->
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+
         <ul
           id="primary-navigation"
           data-visible="false"
           aria-expanded="false"
-          class="nav"
+          class="nav__links"
         >
           <li>
-            <a href="#" class="nav__link scroll-link"
+            <a href="#" class="nav__link"
               ><span aria-hidden="true">00</span> Home</a
             >
           </li>
           <li>
-            <a href="#projects" class="nav__link scroll-link"
+            <a href="#projects" class="nav__link"
               ><span aria-hidden="true">01</span> My work</a
             >
           </li>
           <li>
-            <a href="#about" class="nav__link scroll-link"
+            <a href="#about" class="nav__link"
               ><span aria-hidden="true">02</span> About</a
             >
           </li>
           <li>
-            <a href="#contact" class="nav__link scroll-link"
+            <a href="#contact" class="nav__link"
               ><span aria-hidden="true">03</span> Contact</a
             >
           </li>
@@ -100,40 +70,42 @@
     <!-- main -->
     <main>
       <!-- hero -->
-      <hero id="hero" class="hero">
+      <section id="hero" class="hero">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src="imgs/codingvideo.mp4" type="video/mp4" />
             Your browser is not supported!
           </video>
         </div>
-        <di v class="hero__content">
-          <h1 class="hero__heading">
-            Crafting <span>dynamic</span>, interactive web experiences
-          </h1>
-          <h3 class="hero__typing"></h3>
-          <div class="hero__links">
-            <a href="#projects" class="btn--pink btn mr-small scroll-link"
-              >Projects</a
-            >
-            <a href="#" class="btn--purple btn mb-large">Resume</a>
+        <div class="container">
+          <div class="hero__content">
+            <h1 class="hero__heading">
+              Crafting <span>dynamic</span>, interactive web experiences
+            </h1>
+            <h3 class="hero__typing"></h3>
+            <div class="hero__links">
+              <a href="#projects" class="btn--pink btn mr-small scroll-link"
+                >Projects</a
+              >
+              <a href="#" class="btn--purple btn mb-large">Resume</a>
+            </div>
+            <div class="hero__social-links">
+              <a href="https://github.com/salashamir"
+                ><div class="social-circle sc-github">
+                  <i class="ph-github-logo github"></i></div
+              ></a>
+              <a href="https://www.linkedin.com/in/christian-salazar-006725228/"
+                ><div class="social-circle sc-linkedin">
+                  <i class="ph-linkedin-logo linkedin"></i></div
+              ></a>
+              <a href=""
+                ><div class="social-circle sc-email">
+                  <i class="ph-envelope email"></i></div
+              ></a>
+            </div>
           </div>
-          <div class="hero__social-links">
-            <a href="https://github.com/salashamir"
-              ><div class="social-circle sc-github">
-                <i class="ph-github-logo github"></i></div
-            ></a>
-            <a href="https://www.linkedin.com/in/christian-salazar-006725228/"
-              ><div class="social-circle sc-linkedin">
-                <i class="ph-linkedin-logo linkedin"></i></div
-            ></a>
-            <a href=""
-              ><div class="social-circle sc-email">
-                <i class="ph-envelope email"></i></div
-            ></a>
-          </div>
-        </di>
-      </hero>
+        </div>
+      </section>
       <!-- end of hero -->
       <!-- skill section -->
       <section class="skills section">
@@ -270,7 +242,7 @@
       <!-- projects section -->
       <section class="projects" id="projects">
         <div class="container">
-          <h2 class="secondary-heading neon-blue">< Projects /></h2>
+          <h2 class="secondary-heading neon-purple">< Projects /></h2>
           <div class="projects__grid">
             <!-- project 1 -->
             <article class="project project--yetichat">

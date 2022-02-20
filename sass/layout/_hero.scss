@@ -1,17 +1,17 @@
 @use "../abstracts/variables" as var;
 
 .hero {
-  width: 100%;
+  // width: 100%;
   position: relative;
-  padding: 17rem 0;
+  // padding: 21rem 0 17rem;
+  padding: 12em 0 10em;
   display: flex;
-  justify-content: center;
   align-items: center;
 
   &__content {
     opacity: 0;
     color: #eee;
-    width: 80%;
+    width: 70%;
     text-align: left;
     animation: moveDown 1s ease-in-out forwards;
 
@@ -22,7 +22,7 @@
       margin-bottom: 3.6rem;
 
       span {
-        color: var.$secondary;
+        color: var.$primary;
       }
     }
 
@@ -100,7 +100,7 @@
 @media (max-width: 440px) {
   .hero__content {
     color: #eee;
-    width: 90%;
+    width: 100%;
     text-align: center;
 
     .hero__social-links {

@@ -1,26 +1,32 @@
-const primaryNav = document.querySelector(".nav");
-const navToggle = document.querySelector(".mobile-nav-open");
-const navClose = document.querySelector(".mobile-nav-close");
-const navLink = document.querySelectorAll(".nav li");
+const navAppear = () => {
+  // DOM Elements
+  const burger = document.querySelector(".nav-burger");
+  const navList = document.querySelector(".nav__links");
+  const navItems = document.querySelectorAll(".nav__links li");
+  const navLinks = document.querySelectorAll(".nav__links.nav-active li a");
+  burger.addEventListener("click", () => {
+    // Toggle Nav for Mobile
+    navList.classList.toggle("nav-active");
 
-navToggle.addEventListener("click", () => {
-  primaryNav.setAttribute("data-visible", true);
-  navToggle.setAttribute("aria-expanded", true);
-  navToggle.style.display = "none";
-  navClose.style.display = "block";
-  navLink.forEach((link, index) => {
-    link.style.animation = `navLinkFade 0.3s ease-out forwards ${
-      index / 6 + 0.8
-    }s`;
-  });
-});
+    // Animate Links
+    navItems.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${
+          index / 7 + 0.4
+        }s`;
+      }
+    });
 
-navClose.addEventListener("click", () => {
-  primaryNav.setAttribute("data-visible", false);
-  navToggle.setAttribute("aria-expanded", false);
-  navToggle.style.display = "block";
-  navClose.style.display = "none";
-  navLink.forEach((link) => {
-    link.setAttribute("style", "");
+    // Burger/Close Button Animation
+    burger.classList.toggle("toggleOpenClose");
   });
-});
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navList.classList.toggle("nav-active");
+    });
+  });
+};
+
+navAppear();
