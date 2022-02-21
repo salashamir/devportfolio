@@ -1,6 +1,7 @@
 @use "../abstracts/variables" as var;
 
 .header {
+  border-radius: 2px;
   z-index: 999;
   width: 100%;
   position: fixed;
