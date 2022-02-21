@@ -127,14 +127,20 @@
 @media (max-width: 440px) {
   .hero {
     padding: 10em 0 8em;
-  }
-  .hero__content {
-    color: #eee;
-    width: 100%;
-    // text-align: center;
 
-    // .hero__social-links {
-    //   justify-content: center;
-    // }
+    .hero__content {
+      width: 100%;
+    }
+
+    .hero__typing {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 5%;
+        border-right: 2px solid #fff;
+        animation: blink 0.8s infinite ease;
+      }
+    }
   }
 }
