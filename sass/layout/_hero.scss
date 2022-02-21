@@ -103,6 +103,7 @@
     background: url("../imgs/hero-bcg-mobile.jpg") center/cover no-repeat;
     z-index: 1;
     overflow: hidden;
+    animation: hue 6s infinite alternate;
 
     &::after {
       content: "";
