@@ -4,7 +4,7 @@
   // width: 100%;
   position: relative;
   // padding: 21rem 0 17rem;
-  padding: 12em 0 10em;
+  padding: 15em 0 8em;
   display: flex;
   align-items: center;
 
@@ -98,6 +98,9 @@
 }
 
 @media (max-width: 440px) {
+  .hero {
+    padding: 12em 0 8em;
+  }
   .hero__content {
     color: #eee;
     width: 100%;

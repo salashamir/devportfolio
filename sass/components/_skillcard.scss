@@ -9,6 +9,7 @@
   box-shadow: 0 10px 20px 4px rgba($color: #000000, $alpha: 0.2);
   opacity: 90%;
   transition: all 0.3s ease;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 
   img {
