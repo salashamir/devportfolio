@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  width: 50%;
+  width: 60%;
   height: 17rem;
   border: none;
   border-radius: 5px;
@@ -90,69 +90,12 @@
 .skill__border {
   border-width: 3px;
   border-style: solid;
-
   transition: all 0.3 ease;
-
-  // &--html {
-  //   border-color: transparent;
-
-  //   &:hover {
-  //     border-color: rgb(233, 105, 0);
-  //   }
-  // }
-
-  // &--js {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: rgba(255, 231, 17, 0.849);
-  //   }
-  // }
-
-  // &--css {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: rgba(27, 152, 255, 0.849);
-  //   }
-  // }
-
-  // &--firebase {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: #f5945cd8;
-  //   }
-  // }
-
-  // &--scss {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: rgb(236, 27, 219);
-  //   }
-  // }
-
-  // &--tailwind {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: rgb(103, 250, 218);
-  //   }
-  // }
-
-  // &--bootstrap {
-  //   border-color: transparent;
-  //   &:hover {
-  //     border-color: rgba(129, 75, 255, 0.849);
-  //   }
-  // }
 }
 
 // breakpoints used: 440px 680px, 864px, 1200px
 @media (min-width: 680px) {
   .skill {
-    width: 70%;
-  }
-}
-
-@media (min-width: 864px) {
-  .skill {
-    width: 85%;
+    width: 100%;
   }
 }
