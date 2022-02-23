@@ -23,6 +23,12 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- owlcarousel css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <!-- aos css -->
+    <link rel="stylesheet" href="css/aos.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="css/main.css" />
     <title>Christian Salazar &mdash; Web Developer</title>
   </head>
@@ -30,7 +36,9 @@
     <!-- nav -->
     <header class="header">
       <nav class="container flex">
-        <a class="logo" href="#home">christian<span>.Salazar</span></a>
+        <a data-scroll class="logo" href="#home"
+          >christian<span>.Salazar</span></a
+        >
         <div class="nav-burger" aria-controls="primary-navigation">
           <!-- <span class="sr-only">Menu</span> -->
           <div class="line-1"></div>
@@ -45,22 +53,22 @@
           class="nav__links"
         >
           <li>
-            <a href="#" class="nav__link"
+            <a data-scroll href="#home" class="nav__link"
               ><span aria-hidden="true">00</span> Home</a
             >
           </li>
           <li>
-            <a href="#projects" class="nav__link"
+            <a data-scroll href="#projects" class="nav__link"
               ><span aria-hidden="true">01</span> My work</a
             >
           </li>
           <li>
-            <a href="#about" class="nav__link"
+            <a data-scroll href="#about" class="nav__link"
               ><span aria-hidden="true">02</span> About</a
             >
           </li>
           <li>
-            <a href="#contact" class="nav__link"
+            <a data-scroll href="#contact" class="nav__link"
               ><span aria-hidden="true">03</span> Contact</a
             >
           </li>
@@ -92,7 +100,10 @@
             </h1>
             <h3 class="hero__typing"></h3>
             <div class="hero__links">
-              <a href="#projects" class="btn--pink btn mr-small scroll-link"
+              <a
+                data-scroll
+                href="#projects"
+                class="btn--pink btn mr-small scroll-link"
                 >Projects</a
               >
               <a href="#" class="btn--purple btn mb-large">Resume</a>
@@ -125,9 +136,14 @@
           <div></div>
         </div>
         <div class="container">
-          <h2 class="secondary-heading neon-white">Skills</h2>
+          <h2 data-aos="fade-down-right" class="secondary-heading neon-white">
+            Skills
+          </h2>
           <div class="skills__grid">
-            <div class="skill skill__border skill__border--html one">
+            <div
+              data-aos="fade-up"
+              class="skill skill__border skill__border--html one"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/html_resized.webp"
@@ -142,7 +158,11 @@
               </picture>
               <span class="skill__banner skill__banner--html">HTML5</span>
             </div>
-            <div class="skill skill__border skill__border--js two">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              class="skill skill__border skill__border--js two"
+            >
               <picture>
                 <source srcset="imgs/logos/javascript.webp" type="image/webp" />
                 <source srcset="imgs/logos/javascript.png" type="image/png" />
@@ -154,7 +174,11 @@
               </picture>
               <span class="skill__banner skill__banner--js">JavaScript</span>
             </div>
-            <div class="skill skill__border skill__border--css three">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="skill skill__border skill__border--css three"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/css_resized.webp"
@@ -169,7 +193,11 @@
               </picture>
               <span class="skill__banner skill__banner--css">CSS3</span>
             </div>
-            <div class="skill skill__border skill__border--firebase four">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              class="skill skill__border skill__border--firebase four"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/firebase_resized.webp"
@@ -189,7 +217,11 @@
                 >Firebase</span
               >
             </div>
-            <div class="skill skill__border skill__border--scss five">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="skill skill__border skill__border--scss five"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/sass_resized.webp"
@@ -204,7 +236,11 @@
               </picture>
               <span class="skill__banner skill__banner--scss">SCSS/SASS</span>
             </div>
-            <div class="skill skill__border skill__border--tailwind six">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="500"
+              class="skill skill__border skill__border--tailwind six"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/tailwind_resized.webp"
@@ -224,7 +260,11 @@
                 >Tailwind</span
               >
             </div>
-            <div class="skill skill__border skill__border--bootstrap seven">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="600"
+              class="skill skill__border skill__border--bootstrap seven"
+            >
               <picture>
                 <source
                   srcset="imgs/logos/bootstrap_resized.webp"
@@ -250,8 +290,10 @@
       <!-- projects section -->
       <section class="projects" id="projects">
         <div class="container">
-          <h2 class="secondary-heading neon-purple">Projects</h2>
-          <div class="projects__grid">
+          <h2 data-aos="fade-down-right" class="secondary-heading neon-purple">
+            Projects
+          </h2>
+          <div class="owl-carousel owl-theme">
             <!-- project 1 -->
             <article class="project project--yetichat">
               <picture>
@@ -272,10 +314,9 @@
               <h3 class="project__title project__title--yetichat">Yetichat</h3>
               <div class="project__content">
                 <p class="project__desc">
-                  Web app. Learned about ES6 modules, splitting JS logic, and
-                  asynchronous JS with async/await database requests and
-                  queries. Connected frontend to a backend database with
-                  Firestore to store chat logs as documents.
+                  Web app. Worked with ES6 modules and asynchronous JS with
+                  async/await database requests/queries. Connected to Firestore
+                  backend database to store chat logs.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-js">JavaScript</span>
@@ -310,10 +351,10 @@
                   Dojo of Code
                 </h3>
                 <p class="project__desc">
-                  Mock promotional website created using Bootstrap 5 with SASS
-                  customization and full use of multiple components including
-                  modal, accordion, offcanvas, cards, and a fully responsive
-                  grid layout. Also includes Boostrap icon set.
+                  Mock promotional website made with Bootstrap 5 and SASS
+                  customization. Features multiple components: modal, accordion,
+                  offcanvas, cards, Bootstrap icons, fully responsive grid
+                  layout.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-bootstrap">Bootstrap 5</span>
@@ -340,10 +381,9 @@
                   JS Todos App
                 </h3>
                 <p class="project__desc">
-                  Todos list web app created with vanilla JavaScript, HTML, CSS.
-                  Features multiple functionalities like adding and deleting
-                  todos, filtering todos via search term, crossing out todos
-                  upon completion, and editing todos.
+                  Vanilla JavaScript web app. Features functionalities like
+                  adding, deleting, editing, crossing out, filtering todos via
+                  search term.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-js">JavaScript</span>
@@ -379,7 +419,7 @@
                 <h3 class="project__title project__title--qcloud">qCloud</h3>
                 <p class="project__desc">
                   Mock website for a cloud hosting company featuring multiple
-                  pages for customer testimonials, packages, and a sign-up page.
+                  pages for customer testimonials, packages, and a sign-up form.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-css">CSS</span>
@@ -414,10 +454,9 @@
               <div class="project__content">
                 <h3 class="project__title">Yetigram</h3>
                 <p class="project__desc">
-                  Photo upload app. Front end made with React and file storage
-                  and database set up with Firebase. Framer Motion library for
-                  animations. Users can upload png and jpg images to be
-                  displayed in a grid.
+                  Photo upload app made with React. File storage and database
+                  set up with Firebase. Framer Motion library for animations.
+                  Users can upload png and jpg images to be displayed in a grid.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-react">React</span>
@@ -470,6 +509,14 @@
               </div>
             </article>
           </div>
+          <div class="owl-navigation">
+            <span class="owl-nav-prev">
+              <i class="ph-caret-circle-left"></i>
+            </span>
+            <span class="owl-nav-next">
+              <i class="ph-caret-circle-right"></i>
+            </span>
+          </div>
         </div>
         <svg
           class="waves"
@@ -493,9 +540,21 @@
       <!-- about section -->
       <section class="about" id="about">
         <div class="container">
-          <h2 class="secondary-heading">< About <span>Me.</span> /></h2>
+          <h2
+            data-aos="zoom-in-up"
+            data-aos-delay="1000"
+            class="secondary-heading"
+          >
+            < About <span>Me.</span> />
+          </h2>
           <h3 class="hand">👋</h3>
-          <div class="about__flex">
+          <div
+            data-aos="zoom-out-down"
+            data-aos-easing="ease-out"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            class="about__flex"
+          >
             <p>
               Hello, my name is <span>Christian Salazar</span> and I'm a web
               developer and designer. I deeply enjoy creating new user
@@ -516,7 +575,12 @@
       <!-- contact form -->
       <section id="contact" class="contact">
         <div class="container">
-          <div class="contact__form-container">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+            class="contact__form-container"
+          >
             <div class="contact__left">
               <h2 class="secondary-heading contact__left-heading">
                 Contact Me.
@@ -583,27 +647,17 @@
         </div>
       </section>
     </main>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
-      integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-      integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
-    <script>
-      VanillaTilt.init(document.querySelectorAll(".skill"), {
-        max: 25,
-        speed: 400,
-        perspective: 500,
-      });
-    </script>
-    <script src="nav.js"></script>
-    <script src="index.js"></script>
+    <!-- smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- jquery -->
+    <script src="js/jquery3.6.0.min.js"></script>
+    <!-- owlcarousel js -->
+    <script src="js/owlcarousel.min.js"></script>
+    <!-- aos js -->
+    <script src="js/aos.js"></script>
+    <!-- nav js -->
+    <script src="js/nav.js"></script>
+    <!-- typing effect + gsap js -->
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as var;
+
 .projects {
   // padding: 4.8rem 0 8.4rem;
   padding: 8.4rem 0 -1rem;
@@ -6,6 +8,32 @@
   background: url("../imgs/whitepaint.jpg") center/cover no-repeat fixed;
   z-index: 1;
   overflow: hidden;
+
+  .owl-nav {
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .owl-nav .owl-prev .owl-nav-prev,
+  .owl-nav .owl-next .owl-nav-next {
+    color: var.$primary;
+    background-color: transparent;
+    font-size: 3.6rem;
+    transition: all 0.2s ease-in-out;
+
+    i {
+      background-color: var.$white;
+      border-radius: 50%;
+    }
+  }
+
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: transparent;
+    color: var.$primary-light;
+    transform: scale(1.05);
+  }
 
   &::after {
     content: "";
