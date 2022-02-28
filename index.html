@@ -140,10 +140,7 @@
             Skills
           </h2>
           <div class="skills__grid">
-            <div
-              data-aos="fade-up"
-              class="skill skill__border skill__border--html one"
-            >
+            <div data-aos="fade-up" class="skill">
               <picture>
                 <source
                   srcset="imgs/logos/html_resized.webp"
@@ -157,12 +154,12 @@
                 />
               </picture>
               <span class="skill__banner skill__banner--html">HTML5</span>
+              <div class="skill__overview skill__overview--html">
+                Ability to write accessible and semantic HTML, with an eye
+                toward writing cleanly structured markup.
+              </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="skill skill__border skill__border--js two"
-            >
+            <div data-aos="fade-up" data-aos-delay="100" class="skill">
               <picture>
                 <source srcset="imgs/logos/javascript.webp" type="image/webp" />
                 <source srcset="imgs/logos/javascript.png" type="image/png" />
@@ -173,12 +170,13 @@
                 />
               </picture>
               <span class="skill__banner skill__banner--js">JavaScript</span>
+              <div class="skill__overview skill__overview--js">
+                Knowledge of both object-oriented and functional programming
+                paradigms. Up to speed with ES6 syntax and beyond, including
+                classes and async/await.
+              </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              class="skill skill__border skill__border--css three"
-            >
+            <div data-aos="fade-up" data-aos-delay="200" class="skill">
               <picture>
                 <source
                   srcset="imgs/logos/css_resized.webp"
@@ -192,6 +190,12 @@
                 />
               </picture>
               <span class="skill__banner skill__banner--css">CSS3</span>
+              <div class="skill__overview skill__overview--css">
+                In-depth understanding of specificity, the box model,
+                positioning, creating layouts with Flexbox and Grid, spacing,
+                design principles, animations, smooth-flowing responsive designs
+                and browser prefixing.
+              </div>
             </div>
             <div
               data-aos="fade-up"
@@ -216,6 +220,11 @@
               <span class="skill__banner skill__banner--firebase"
                 >Firebase</span
               >
+              <div class="skill__overview skill__overview--firebase">
+                Backend: ability to use Firestore database, use Firebase storage
+                for files, and set up Firebase Authentication. Proficient in the
+                latest v9.
+              </div>
             </div>
             <div
               data-aos="fade-up"
@@ -294,7 +303,7 @@
             Projects
           </h2>
           <div class="owl-carousel owl-theme">
-            <!-- project 1 -->
+            <!-- project  -->
             <article class="project project--yetichat">
               <picture>
                 <source
@@ -308,7 +317,7 @@
                 <img
                   class="project__img"
                   src="imgs/projects/yetichat_min.PNG"
-                  alt=""
+                  alt="chat application interface"
                 />
               </picture>
               <h3 class="project__title project__title--yetichat">Yetichat</h3>
@@ -325,14 +334,139 @@
                   <span class="span-firebase">Firebase</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    href="https://yetichat.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/yetichat/tree/master"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
               </div>
             </article>
-            <!-- project 2 -->
+            <!-- project -->
+            <article class="project">
+              <picture>
+                <source
+                  srcset="imgs/projects/filmetic-min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/filmetic-min.png"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="imgs/projects/filmetic-min.png"
+                  alt="project image for movie app"
+                />
+              </picture>
+              <h3 class="project__title">Filmetic</h3>
+              <div class="project__content">
+                <p class="project__desc">
+                  React application for searching films and displaying top
+                  popular release info from The Movie Database API. Includes use
+                  of multiple hooks.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-react">React</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a
+                    href="https://cranky-fermat-a517b5.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/react-film-app"
+                    class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project -->
+            <article class="project">
+              <picture>
+                <source
+                  srcset="imgs/projects/mizzle-min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/mizzle-min.jpg"
+                  type="image/jpg"
+                />
+                <img
+                  class="project__img"
+                  src="imgs/projects/mizzle-min.jpg"
+                  alt="project image for weather API app"
+                />
+              </picture>
+              <h3 class="project__title">Mizzle Weather</h3>
+              <div class="project__content">
+                <p class="project__desc">
+                  Weather data app that retrieves weather info for user input
+                  city from AccuWeather API. Implements object oriented design
+                  and async JS.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-js">JavaScript</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a
+                    href="https://cranky-fermat-a517b5.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/react-film-app"
+                    class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project -->
+            <article class="project">
+              <img
+                class="project__img"
+                src="imgs/projects/herbace.jpg"
+                alt="testimonial section for mock website"
+              />
+
+              <h3 class="project__title project__title--yetichat">Herbacé</h3>
+              <div class="project__content">
+                <p class="project__desc">
+                  Mock website for a monthly tea delivery service with smooth
+                  scroll, responsive mobile nav, sticky header, and various
+                  sections.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-js">JavaScript</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-css">CSS</span>
+                </div>
+                <div class="project__btns">
+                  <a
+                    href="https://herbace-teas.netlify.app"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/yetichat/tree/master"
+                    class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project -->
             <article class="project project--dojo">
               <picture>
                 <source
@@ -391,8 +525,14 @@
                   <span class="span-css">CSS</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    href="https://vanillajstodosapp.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/vanillajs_todoslist/tree/master"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
@@ -427,8 +567,14 @@
                   <span class="span-js">JavaScript</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    href="https://blissful-euclid-28f314.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/qCloud"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
@@ -464,8 +610,14 @@
                   <span class="span-css">CSS</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    href="https://vibrant-tereshkova-89148c.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/yetigram"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
@@ -501,8 +653,14 @@
                   <span class="span-css">CSS</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    href="https://react-todos-list-app.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    href="https://github.com/salashamir/react-todos-app"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
@@ -578,7 +736,7 @@
           <div
             data-aos="fade-left"
             data-aos-duration="1500"
-            data-aos-delay="500"
+            data-aos-delay="1000"
             class="contact__form-container"
           >
             <div class="contact__left">
@@ -657,7 +815,7 @@
     <script src="js/aos.js"></script>
     <!-- nav js -->
     <script src="js/nav.js"></script>
-    <!-- typing effect + gsap js -->
+    <!-- typing effect -->
     <script src="js/index.js"></script>
   </body>
 </html>

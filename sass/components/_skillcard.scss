@@ -13,38 +13,76 @@
   opacity: 90%;
   transition: all 0.3s ease;
 
+  &__overview {
+    border-radius: 8px;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: all 0.25s ease;
+    overflow-y: auto;
+    opacity: 0;
+    line-height: 1.5;
+    padding: 1rem 2rem;
+
+    &--html {
+      background: rgba(255, 119, 29, 0.952);
+      color: #333;
+    }
+
+    &--js {
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 231, 17, 0.986),
+        rgb(206, 203, 56)
+      );
+      color: #222;
+    }
+
+    &--css {
+      background: linear-gradient(
+        to right bottom,
+        rgba(27, 152, 255, 0.849),
+        rgb(96, 187, 248)
+      );
+      color: #333;
+    }
+
+    &--firebase {
+      background: linear-gradient(to right bottom, #f5945cd8, rgb(255, 230, 0));
+    }
+  }
+
   &:hover {
     transform: scale(1.2) !important;
+  }
+
+  &:hover .skill__overview {
+    opacity: 1;
+    height: 100%;
   }
 
   img {
     height: 10rem;
   }
 
-  &:hover {
-    & .skill__banner {
-      display: inline-block;
-      opacity: 1;
-      transform: translateY(100%);
-    }
-  }
-
   &__banner {
     color: #fff;
 
     position: absolute;
-    padding: 1rem 3rem;
-    top: 45%;
+    padding: 1rem 2rem;
+    top: 65%;
     font-size: 2rem;
     font-weight: 500;
-    opacity: 0;
-    transition: all 0.3s;
+    opacity: 1;
 
     &--html {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(253, 162, 26, 0.849), 0.85),
-        rgba(rgb(192, 124, 22), 0.85)
+        rgba(253, 162, 26, 0.849),
+        rgb(192, 124, 22)
       );
     }
     &--js {
