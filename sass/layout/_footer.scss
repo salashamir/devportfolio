@@ -1,0 +1,16 @@
+@use "../abstracts/variables" as var;
+
+.footer {
+  padding: 6.4rem 0;
+  color: var.$primary-light;
+  &-flex {
+    display: flex;
+    p {
+      flex: 1;
+    }
+  }
+  &-made {
+    color: #eee;
+    text-align: right;
+  }
+}

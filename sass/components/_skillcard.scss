@@ -29,7 +29,6 @@
 
     &--html {
       background: rgba(255, 119, 29, 0.952);
-      color: #333;
     }
 
     &--js {
@@ -38,7 +37,6 @@
         rgba(255, 231, 17, 0.986),
         rgb(206, 203, 56)
       );
-      color: #222;
     }
 
     &--css {
@@ -47,11 +45,66 @@
         rgba(27, 152, 255, 0.849),
         rgb(96, 187, 248)
       );
-      color: #333;
     }
 
     &--firebase {
       background: linear-gradient(to right bottom, #f5945cd8, rgb(255, 230, 0));
+    }
+
+    &--scss {
+      background: linear-gradient(
+        to right bottom,
+        rgba(244, 135, 248, 0.849),
+        rgb(236, 27, 219)
+      );
+    }
+
+    &--tailwind {
+      background: linear-gradient(
+        to right bottom,
+        rgba(94, 231, 213, 0.849),
+        rgb(13, 216, 243)
+      );
+    }
+
+    &--bs {
+      background: linear-gradient(
+        to right bottom,
+        rgba(158, 116, 255, 0.849),
+        rgb(161, 89, 255)
+      );
+    }
+
+    &--react {
+      background: linear-gradient(
+        to right bottom,
+        rgba(0, 183, 255, 0.938),
+        rgb(72, 183, 235)
+      );
+    }
+
+    &--git {
+      background: linear-gradient(
+        to right bottom,
+        rgba(247, 99, 62, 0.849),
+        rgb(238, 108, 91)
+      );
+    }
+
+    &--npm {
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 254, 1)
+      );
+    }
+
+    &--mysql {
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 201, 131, 0.8),
+        rgb(255, 165, 91)
+      );
     }
   }
 
@@ -65,7 +118,11 @@
   }
 
   img {
-    height: 10rem;
+    height: 8rem;
+  }
+
+  .npm {
+    height: 5rem;
   }
 
   &__banner {
@@ -73,9 +130,9 @@
 
     position: absolute;
     padding: 1rem 2rem;
-    top: 65%;
+    top: 73%;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     opacity: 1;
 
     &--html {
@@ -84,48 +141,95 @@
         rgba(253, 162, 26, 0.849),
         rgb(192, 124, 22)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--js {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(255, 231, 17, 0.849), 0.85),
-        rgba(rgb(206, 203, 56), 0.85)
+        rgba(255, 231, 17, 0.849),
+        rgb(206, 203, 56)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--css {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(27, 152, 255, 0.849), 0.85),
-        rgba(rgb(96, 187, 248), 0.85)
+        rgba(27, 152, 255, 0.849),
+        rgb(96, 187, 248)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--firebase {
-      background: linear-gradient(
-        to right bottom,
-        rgba(#f5945cd8, 0.85),
-        rgba(rgb(255, 230, 0), 0.85)
-      );
+      background: linear-gradient(to right bottom, #f5945cd8, rgb(255, 230, 0));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--scss {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(244, 135, 248, 0.849), 0.85),
-        rgba(rgb(236, 27, 219), 0.85)
+        rgba(244, 135, 248, 0.849),
+        rgb(236, 27, 219)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--tailwind {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(78, 228, 255, 0.849), 0.85),
-        rgba(rgb(13, 216, 243), 0.85)
+        rgba(94, 231, 213, 0.849),
+        rgb(13, 216, 243)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     &--bootstrap {
       background: linear-gradient(
         to right bottom,
-        rgba(rgba(129, 75, 255, 0.849), 0.85),
-        rgba(rgb(120, 57, 202), 0.85)
+        rgba(76, 0, 255, 0.849),
+        rgb(94, 23, 187)
       );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--react {
+      background: linear-gradient(
+        to right bottom,
+        rgba(0, 183, 255, 0.849),
+        rgb(72, 183, 235)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--git {
+      background: linear-gradient(
+        to right bottom,
+        rgba(247, 99, 62, 0.849),
+        rgb(184, 22, 1)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &--mysql {
+      background: linear-gradient(
+        to right bottom,
+        rgba(255, 201, 131, 0.8),
+        rgb(241, 130, 66)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }

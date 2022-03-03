@@ -31,7 +31,7 @@
       position: absolute;
       height: 6rem;
       width: 6rem;
-      border: 8px solid rgba(255, 255, 255, 0.329);
+      border: 8px solid rgba(255, 255, 255, 0.589);
       border-radius: 50%;
 
       &:nth-child(1) {
@@ -67,12 +67,36 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     gap: 5rem;
+    margin-bottom: 6.4rem;
+  }
+
+  &__summary {
+    div {
+      color: #eee;
+      font-size: 1.6rem;
+      line-height: 1.6;
+
+      h4 {
+        display: inline-block;
+        background: #fff;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 19px;
+        padding: 0.3rem 0.6rem;
+        color: rgb(119, 34, 255);
+      }
+
+      &:not(last-of-type) {
+        margin-bottom: 2.2rem;
+      }
+    }
   }
 }
 
 @media (min-width: 680px) {
   .skills .skills__grid {
-    gap: 6rem;
+    gap: 4rem;
     grid-template-columns: repeat(2, 1fr);
   }
 }

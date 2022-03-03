@@ -13,13 +13,17 @@
       name="keywords"
       content="Christian Salazar, Web Development, Development, Web Developer, React developer, Web Designer, Web Design, Front End Developer"
     />
-    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script
+      crossorigin="anonymous"
+      src="https://unpkg.com/phosphor-icons"
+    ></script>
     <link rel="icon" href="/imgs/favicons/favicon64.PNG" />
     <link rel="apple-touch-icon" href="/imgs/favicons/favicon180apple.PNG" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      crossorigin="anonymous"
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -78,13 +82,7 @@
     <!-- main -->
     <main>
       <!-- hero -->
-      <section id="hero" class="hero">
-        <!-- <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="imgs/lavendervid.mp4" type="video/mp4" />
-            Your browser is not supported!
-          </video>
-        </div> -->
+      <section id="home" class="hero">
         <video
           class="hero__video"
           src="imgs/lavendervid2.mp4"
@@ -106,18 +104,30 @@
                 class="btn--pink btn mr-small scroll-link"
                 >Projects</a
               >
-              <a href="#" class="btn--purple btn mb-large">Resume</a>
+              <a href="#" target="_blank" class="btn--purple btn mb-large"
+                >Resume</a
+              >
             </div>
             <div class="hero__social-links">
-              <a href="https://github.com/salashamir"
+              <a
+                rel="noopener noreferrer"
+                aria-label="github account"
+                target="_blank"
+                href="https://github.com/salashamir"
                 ><div class="social-circle sc-github">
                   <i class="ph-github-logo github"></i></div
               ></a>
-              <a href="https://www.linkedin.com/in/christian-salazar-006725228/"
+              <a
+                aria-label="linkedin account"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://www.linkedin.com/in/christian-salazar-a89a9a232/"
                 ><div class="social-circle sc-linkedin">
                   <i class="ph-linkedin-logo linkedin"></i></div
               ></a>
-              <a href=""
+              <a
+                aria-label="send email"
+                href="mailto:christiansalazar@christian-salazar.dev"
                 ><div class="social-circle sc-email">
                   <i class="ph-envelope email"></i></div
               ></a>
@@ -137,7 +147,29 @@
         </div>
         <div class="container">
           <h2 data-aos="fade-down-right" class="secondary-heading neon-white">
-            Skills
+            <span>Skills</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 24 24"
+              height="3.8rem"
+              width="3.8rem"
+              viewBox="0 0 24 24"
+              fill="#fff"
+            >
+              <g><rect fill="none" height="24" width="24" /></g>
+              <g>
+                <g>
+                  <path
+                    d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10 C22,6.48,17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8c0-4.41,3.59-8,8-8s8,3.59,8,8C20,16.41,16.41,20,12,20z"
+                    fill-rule="evenodd"
+                  />
+                  <path
+                    d="M13.49,11.38c0.43-1.22,0.17-2.64-0.81-3.62c-1.11-1.11-2.79-1.3-4.1-0.59 l2.35,2.35l-1.41,1.41L7.17,8.58c-0.71,1.32-0.52,2.99,0.59,4.1c0.98,0.98,2.4,1.24,3.62,0.81l3.41,3.41c0.2,0.2,0.51,0.2,0.71,0 l1.4-1.4c0.2-0.2,0.2-0.51,0-0.71L13.49,11.38z"
+                    fill-rule="evenodd"
+                  />
+                </g>
+              </g>
+            </svg>
           </h2>
           <div class="skills__grid">
             <div data-aos="fade-up" class="skill">
@@ -197,11 +229,96 @@
                 and browser prefixing.
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="300"
-              class="skill skill__border skill__border--firebase four"
-            >
+            <div data-aos="fade-up" data-aos-delay="650" class="skill">
+              <img
+                class="skill__img"
+                src="imgs/logos/reactlogo3.png"
+                alt="React.js framework logo"
+              />
+              <span class="skill__banner skill__banner--react">React</span>
+              <div class="skill__overview skill__overview--react">
+                Ability to create custom UIs and web apps with React as a
+                frontend framework. Experience working with both class-based and
+                functional components. Ability to use functional hooks:
+                useState, useEffect, useHistory, useParams, useCallback,
+                useLocation, useContext, useReducer, and to make custom hooks.
+                Knowledge of React Router and the Context API.
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400" class="skill">
+              <picture>
+                <source
+                  srcset="imgs/logos/sass_resized.webp"
+                  type="image/webp"
+                />
+                <source srcset="imgs/logos/sass_resized.png" type="image/png" />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/sass_resized.webp"
+                  alt="SASS preprocessor logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--scss">SCSS/SASS</span>
+              <div class="skill__overview skill__overview--scss">
+                Experience with styling using SCSS/SASS with BEM class
+                architecture, and reusable components. Ability to use latest
+                SCSS directives such as @use and @forward and proper file
+                architecture. Knowledge and practice with using variables,
+                nesting, mix-ins, SASS maps.
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="500" class="skill">
+              <picture>
+                <source
+                  srcset="imgs/logos/tailwind_resized.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/logos/tailwind_resized.png"
+                  type="image/png"
+                />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/tailwind_resized.png"
+                  alt="Tailwind framework logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--tailwind"
+                >Tailwind</span
+              >
+              <div class="skill__overview skill__overview--tailwind">
+                Experience with using Tailwind utility classes for styling a
+                mockup design. Understanding of how to customize Tailwind and
+                use the latest version.
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="600" class="skill">
+              <picture>
+                <source
+                  srcset="imgs/logos/bootstrap_resized.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/logos/bootstrap_resized.png"
+                  type="image/png"
+                />
+                <img
+                  class="skill__img"
+                  src="imgs/logos/bootstrap_resized.png"
+                  alt="Bootstrap framework logo"
+                />
+              </picture>
+              <span class="skill__banner skill__banner--bootstrap"
+                >Bootstrap5</span
+              >
+              <div class="skill__overview skill__overview--bs">
+                Experience with developing projects using the latest Bootstrap
+                with an understanding of its responsive grid system and all of
+                its components and their implementations. Also have practice in
+                customizing via SASS and creating custom themes.
+              </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="skill">
               <picture>
                 <source
                   srcset="imgs/logos/firebase_resized.webp"
@@ -226,72 +343,67 @@
                 latest v9.
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="400"
-              class="skill skill__border skill__border--scss five"
-            >
-              <picture>
-                <source
-                  srcset="imgs/logos/sass_resized.webp"
-                  type="image/webp"
-                />
-                <source srcset="imgs/logos/sass_resized.png" type="image/png" />
-                <img
-                  class="skill__img"
-                  src="imgs/logos/sass_resized.webp"
-                  alt="SASS preprocessor logo"
-                />
-              </picture>
-              <span class="skill__banner skill__banner--scss">SCSS/SASS</span>
+            <div data-aos="fade-up" data-aos-delay="790" class="skill">
+              <img
+                class="skill__img"
+                src="imgs/logos/mysql.png"
+                alt="mysql logo"
+              />
+              <span class="skill__banner skill__banner--mysql">MySQL</span>
+              <div class="skill__overview skill__overview--mysql">
+                Have worked with several MySQL databases with XAMPP. Ability to
+                connect with the database via server-side language like PHP and
+                get data, delete data, add data to tables.
+              </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="500"
-              class="skill skill__border skill__border--tailwind six"
-            >
-              <picture>
-                <source
-                  srcset="imgs/logos/tailwind_resized.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="imgs/logos/tailwind_resized.png"
-                  type="image/png"
-                />
-                <img
-                  class="skill__img"
-                  src="imgs/logos/tailwind_resized.png"
-                  alt="Tailwind framework logo"
-                />
-              </picture>
-              <span class="skill__banner skill__banner--tailwind"
-                >Tailwind</span
-              >
+            <div data-aos="fade-up" data-aos-delay="700" class="skill">
+              <img
+                class="skill__img"
+                src="imgs/logos/git2.png"
+                alt="git version management logo"
+              />
+              <span class="skill__banner skill__banner--git">git</span>
+              <div class="skill__overview skill__overview--git">
+                Experience with using git version control management system in
+                conjunction with remote repositories hosted on github. Have
+                worked with merging branches, pushing, pulling, etc.
+              </div>
             </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="600"
-              class="skill skill__border skill__border--bootstrap seven"
-            >
-              <picture>
-                <source
-                  srcset="imgs/logos/bootstrap_resized.webp"
-                  type="image/webp"
-                />
-                <source
-                  srcset="imgs/logos/bootstrap_resized.png"
-                  type="image/png"
-                />
-                <img
-                  class="skill__img"
-                  src="imgs/logos/bootstrap_resized.png"
-                  alt="Bootstrap framework logo"
-                />
-              </picture>
-              <span class="skill__banner skill__banner--bootstrap"
-                >Bootstrap5</span
-              >
+            <div data-aos="fade-up" data-aos-delay="750" class="skill">
+              <img
+                class="skill__img npm"
+                src="imgs/logos/npm.png"
+                alt="node package manager logo"
+              />
+              <span class="skill__banner skill__banner--npm">npm</span>
+              <div class="skill__overview skill__overview--npm">
+                Knowledge of npm from use in multiple projects to install and
+                manage dependencies.
+              </div>
+            </div>
+          </div>
+          <div class="skills__summary">
+            <div>
+              <h4>Front End</h4>
+              <p>
+                HTML &mdash; CSS &mdash; SCSS/Sass &mdash; React &mdash;
+                JavaScript &mdash; JSON &mdash; AJAX &mdash; DOM manipulation
+                &mdash; Tailwind &mdash; Bootstrap
+              </p>
+            </div>
+            <div>
+              <h4>Back End</h4>
+              <p>
+                Firebase Firestore &mdash; Firebase Auth &mdash; Firebase
+                Storage &mdash; MySQL &mdash; NoSQL databases
+              </p>
+            </div>
+            <div>
+              <h4>Workflow Tools</h4>
+              <p>
+                Git &mdash; Github &mdash; npm &mdash; Webpack &mdash; Babel
+                &mdash; Yarn &mdash; VSCode
+              </p>
             </div>
           </div>
         </div>
@@ -304,49 +416,54 @@
           </h2>
           <div class="owl-carousel owl-theme">
             <!-- project  -->
-            <article class="project project--yetichat">
+            <article class="project">
               <picture>
                 <source
-                  srcset="imgs/projects/yetichat_min.webp"
+                  srcset="imgs/projects/recipescrapbook.webp"
                   type="image/webp"
                 />
                 <source
-                  srcset="imgs/projects/yetichat_min.PNG"
+                  srcset="imgs/projects/recipescrapbook.png"
                   type="image/png"
                 />
                 <img
                   class="project__img"
-                  src="imgs/projects/yetichat_min.PNG"
-                  alt="chat application interface"
+                  src="imgs/projects/recipescrapbook.png"
+                  alt="recipe scrapbook react app"
                 />
               </picture>
-              <h3 class="project__title project__title--yetichat">Yetichat</h3>
+              <h3 class="project__title">Recipe Scrapbook</h3>
               <div class="project__content">
                 <p class="project__desc">
-                  Web app. Worked with ES6 modules and asynchronous JS with
-                  async/await database requests/queries. Connected to Firestore
-                  backend database to store chat logs.
+                  React CRUD app for recipes with extensive use of functional
+                  hooks, including Context API and useReducer to toggle
+                  dark/light theme and colors. Conncted to Firebase Firestore
+                  database.
                 </p>
                 <div class="project__skills-used">
-                  <span class="span-js">JavaScript</span>
-                  <span class="span-html">HTML</span>
+                  <span class="span-react">React</span>
                   <span class="span-css">CSS</span>
                   <span class="span-firebase">Firebase</span>
                 </div>
                 <div class="project__btns">
                   <a
-                    href="https://yetichat.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://serene-northcutt-2e1748.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
-                    href="https://github.com/salashamir/yetichat/tree/master"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/salashamir/recipescrapbook-react-site"
                     class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
               </div>
             </article>
+
             <!-- project -->
             <article class="project">
               <picture>
@@ -377,11 +494,15 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://cranky-fermat-a517b5.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://github.com/salashamir/react-film-app"
                     class="btn btn-project btn--purple"
                     >Github repo</a
@@ -420,12 +541,16 @@
                 </div>
                 <div class="project__btns">
                   <a
-                    href="https://cranky-fermat-a517b5.netlify.app/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://festive-jang-42932a.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
-                    href="https://github.com/salashamir/react-film-app"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/salashamir/mizzle-weather-app"
                     class="btn btn-project btn--purple"
                     >Github repo</a
                   >
@@ -454,12 +579,16 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://herbace-teas.netlify.app"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
-                    href="https://github.com/salashamir/yetichat/tree/master"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/salashamir/herbace"
                     class="btn btn-project btn--purple"
                     >Github repo</a
                   >
@@ -496,8 +625,18 @@
                   <span class="span-js">JavaScript</span>
                 </div>
                 <div class="project__btns">
-                  <a href="#" class="btn btn-project btn--pink">Live project</a>
-                  <a href="#" class="btn btn-project btn--purple"
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://dojoofcode.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/salashamir/dojoOfCode__bootstrap/tree/master"
+                    class="btn btn-project btn--purple"
                     >Github repo</a
                   >
                 </div>
@@ -526,12 +665,64 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://vanillajstodosapp.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://github.com/salashamir/vanillajs_todoslist/tree/master"
+                    class="btn btn-project btn--purple"
+                    >Github repo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <!-- project -->
+            <article class="project project--yetichat">
+              <picture>
+                <source
+                  srcset="imgs/projects/yetichat_min.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="imgs/projects/yetichat_min.PNG"
+                  type="image/png"
+                />
+                <img
+                  class="project__img"
+                  src="imgs/projects/yetichat_min.PNG"
+                  alt="chat application interface"
+                />
+              </picture>
+              <h3 class="project__title project__title--yetichat">Yetichat</h3>
+              <div class="project__content">
+                <p class="project__desc">
+                  Web app. Worked with ES6 modules and asynchronous JS with
+                  async/await database requests/queries. Connected to Firestore
+                  backend database to store chat logs.
+                </p>
+                <div class="project__skills-used">
+                  <span class="span-js">JavaScript</span>
+                  <span class="span-html">HTML</span>
+                  <span class="span-css">CSS</span>
+                  <span class="span-firebase">Firebase</span>
+                </div>
+                <div class="project__btns">
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://yetichat.netlify.app/"
+                    class="btn btn-project btn--pink"
+                    >Live project</a
+                  >
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/salashamir/yetichat/tree/master"
                     class="btn btn-project btn--purple"
                     >Github repo</a
                   >
@@ -568,11 +759,15 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://blissful-euclid-28f314.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://github.com/salashamir/qCloud"
                     class="btn btn-project btn--purple"
                     >Github repo</a
@@ -611,11 +806,15 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://vibrant-tereshkova-89148c.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://github.com/salashamir/yetigram"
                     class="btn btn-project btn--purple"
                     >Github repo</a
@@ -646,7 +845,8 @@
                 </h3>
                 <p class="project__desc">
                   Todo List app created using React. Functionalities include
-                  adding todos, removing todos, and editing todos.
+                  adding todos, removing todos, and editing todos. Made with
+                  class-based components.
                 </p>
                 <div class="project__skills-used">
                   <span class="span-react">React</span>
@@ -654,11 +854,15 @@
                 </div>
                 <div class="project__btns">
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://react-todos-list-app.netlify.app/"
                     class="btn btn-project btn--pink"
                     >Live project</a
                   >
                   <a
+                    rel="noopener noreferrer"
+                    target="_blank"
                     href="https://github.com/salashamir/react-todos-app"
                     class="btn btn-project btn--purple"
                     >Github repo</a
@@ -725,7 +929,6 @@
             </p>
             <div class="about__img-cont">
               <img src="imgs/about-img.jpg" alt="" />
-              <span>💻</span>
             </div>
           </div>
         </div>
@@ -804,6 +1007,12 @@
           </div>
         </div>
       </section>
+      <footer class="footer">
+        <div class="container footer-flex">
+          <p>&copy; 2022 by Christian Salazar. All rights reserved.</p>
+          <p class="footer-made">Made with ❤️‍🔥, HTML, SCSS, JS, & jQuery.</p>
+        </div>
+      </footer>
     </main>
     <!-- smooth scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>

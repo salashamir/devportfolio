@@ -8,7 +8,7 @@
   margin-bottom: 5.6rem;
 
   @media (max-width: 680px) {
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -17,13 +17,6 @@
   color: #fff;
   line-height: 6vw;
   text-shadow: 0 0 4vw #eee;
-
-  &::after {
-    content: "";
-    width: 10px;
-    height: 5px;
-    background-color: #fff;
-  }
 }
 
 .neon-purple {
