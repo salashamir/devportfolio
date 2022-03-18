@@ -1,14 +1,14 @@
 {
   "icons": [
     {
-      "src": "imgs/favicons/favicon192android.PNG",
+      "src": "imgs/favicons/purplefavicon192.png",
       "type": "image/png",
-      "sizes": "192x131"
+      "sizes": "192x133"
     },
     {
-      "src": "imgs/favicons/favicon512.PNG",
+      "src": "imgs/favicons/purplefavicon512.png",
       "type": "image/png",
-      "sizes": "512x348"
+      "sizes": "512x355"
     }
   ]
 }
